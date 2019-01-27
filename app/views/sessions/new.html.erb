@@ -1,0 +1,17 @@
+<h1>log in </h1>
+
+<div>
+	<form accept-charset="UTF-8" action="login" method="POST">
+	<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+	<label for ="session_email">Email:</label> 
+	<input type="text" id="session_email" name="session[email]">
+	<br>
+
+	<label for="session_password">Password:</label>
+	<input type="password" id="session_password" name="session[password]">
+    <br>
+	<input name="commit" type="submit" value= "log in">
+	</form>
+	
+</div>
