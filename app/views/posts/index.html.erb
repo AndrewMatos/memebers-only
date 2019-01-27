@@ -1,0 +1,5 @@
+<h3> posts made </h3>
+<% @posts.each do |post|%>
+  <p><%= post.body %> <% if current_user %>Made by <%=User.find(post.user_id).name%> <% end %>
+  </p> 
+<% end %>

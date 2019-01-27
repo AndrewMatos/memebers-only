@@ -1,0 +1,9 @@
+<h1>Make a post:</h1>
+<div>
+	<form accept-charset="UTF-8" action="/posts" method="POST">
+		<input type="hidden" name="authenticity_token" value ="<%= form_authenticity_token %>" >
+         
+		<input type="text" name="posts[body]">
+		<input type="submit" value="submit!" name="commit">
+	</form>
+</div>
